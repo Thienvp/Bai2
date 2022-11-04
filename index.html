@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <img class="header" src="/IMG/background.jpg" alt="This is header img" />
+    
+    <div class="container">
+        <div class="hide">
+            <h3> Question 1 </h3>
+            <img class="question" src="./IMG/1.png" />
+            <audio controls class="Audio">
+                <source src="./Audio/01.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+        <div class="hide">
+            <h3> Question 2 </h3>
+            <img class="question" src="./IMG/2.png" />
+            <audio controls class="Audio">
+                <source src="./Audio/02.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+        <div class="hide">
+            <h3> Question 3 </h3>
+            <img class="question" src="./IMG/3.png" />
+            <audio controls class="Audio">
+                <source src="./Audio/03.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+        <div class="hide">
+            <h3> Question 4 </h3>
+            <img class="question" src="./IMG/4.png" />
+            <audio controls class="Audio">
+                <source src="./Audio/04.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+        <div class="hide">
+            <h3> Question 5 </h3>
+            <img class="question" src="./IMG/5.png" />
+            <audio controls class="Audio">
+                <source src="./Audio/05.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+        <div class="hide">
+            <h3> Question 6 </h3>
+            <img class="question" src="./IMG/6.png" />
+            <audio controls class="Audio">
+                <source src="./Audio/06.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+        <div class="hide question7">
+            <h3> Question 7 </h3>
+            <img class="question" src="./IMG/7.png" />
+            <audio controls class="Audio">
+                <source src="./Audio/07.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+        <div class="hide">
+            <h3> Question 8 </h3>
+            <img class="question" src="./IMG/8.png" />
+            <audio controls class="Audio">
+                <source src="./Audio/08.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+        <div class="hide">
+            <h3> Question 9 </h3>
+            <img class="question" src="./IMG/9.png" />
+            <audio controls class="Audio">
+                <source src="./Audio/09.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+        <div class="hide">
+            <h3> Question 10 </h3>
+            <img class="question" src="./IMG/10.png" />
+            <audio controls class="Audio">
+                <source src="./Audio/10.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+
+        <button class="btn" role="button" onclick="plusDivs(-1)">PREV</button>
+        <button class="btn" role="button" onclick="plusDivs(+1)">NEXT</button>
+    </div>
+    <h2 class="titler"> Listening Track 2 </h2>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("hide");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length };
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
