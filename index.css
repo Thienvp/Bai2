@@ -6,16 +6,9 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-body {
-    background-color: black;
-}
 
 .titler {
-    color: white;
-    text-shadow: 4px 5px 4px rgb(6, 6, 6);
     margin-top: 10px;
-
-
 }
 
 .header {
@@ -47,27 +40,28 @@ body {
 }
 
 .btn {
-    background-color: black;
-    border-bottom-left-radius: 2px solid azure;
+    background-color: cyan;
+    border-color: inherit;
     border-radius: 30px;
-    color: white;
     padding: 12px 32px;
-    text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    cursor: pointer;
-    -webkit-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.6s;
     /* Safari */
     transition-duration: 0.4s;
-    box-shadow: 0 4px 10px 0 white, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .btn:hover {
-    box-shadow: 0 8px 16px 0 red, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 6px 10px 0 rgb(172, 213, 239), 0 4px 7px 0 rgb(190, 218, 218);
 }
 
+.question:hover {
+    box-shadow: 0 8px 15px 0 rgb(172, 213, 239), 0 8px 16px 0 rgb(190, 218, 218);
+    transition-duration: 1s;
+
+}
 .container {
     border: 2px solid white;
     border-radius: 20px;
@@ -77,19 +71,17 @@ body {
 }
 
 h3 {
-    color: white;
     margin: 0;
     margin-bottom: 10px;
 }
 
-a:hover {
-    text-shadow: 5px 0px 2px rgb(255, 0, 0);
-}
+
 
 /* Dropdown Button */
 .Hintbtn {
-    background-color: black;
-    color: white;
+    background-color: inherit;
+    color: black ;
+    border:none ;
     text-align: center;
     text-decoration: none;
     display: block;
@@ -113,6 +105,7 @@ a:hover {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    text-align: left;
 }
 
 
